@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Candy Crush Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="category-selection">
+    <h1>Select a Category</h1>
+    <button class="category-btn" data-category="General Knowledge">General Knowledge</button>
+    <button class="category-btn" data-category="Science">Science</button>
+    <button class="category-btn" data-category="Math">Math</button>
+  </div>
+
+  <div id="level-selection" class="hidden">
+    <h1>Select a Level</h1>
+    <button class="level-btn" data-level="1">Level 1</button>
+    <button class="level-btn" data-level="2">Level 2</button>
+    <button class="level-btn" data-level="3">Level 3</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    <h2>Score: <span id="score">0</span></h2>
+    <div id="candy-grid" class="grid"></div>
+
+    <div id="question-box" class="hidden">
+      <p id="question-text"></p>
+      <div id="options-container"></div>
+      <p id="feedback" style="font-weight: bold; margin-top: 10px;"></p>
+    </div>
+
+    <div id="celebration" class="hidden">🎉 Level Completed! 🎉</div>
+
+    <button id="refresh-btn">🔄 Refresh Candies</button>
+    <button id="back-to-levels">🔙 Back to Levels</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
